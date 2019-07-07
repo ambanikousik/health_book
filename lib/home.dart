@@ -7,7 +7,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _bottomNavIndex=0;
+ // int _bottomNavIndex=0;
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
         color: Colors.redAccent,
         height: 50,
        // backgroundColor:Color.fromRGBO(255, 255, 255, 1.0),
-        backgroundColor:Colors.red[100],
+        backgroundColor:Colors.white,
         items: <Widget>[
           Icon(Icons.home, size: 30),
           Icon(Icons.question_answer, size: 30),
@@ -388,8 +388,10 @@ class MainContent extends StatelessWidget {
               ),
               Row(
                 children: <Widget>[
+                  
                   new Expanded(
                     child: Container(
+                      padding: EdgeInsets.only(left: 2.0,right: 2.0),
                       height: 150.0,
                       child: new Column(
                         children: <Widget>[
@@ -411,11 +413,10 @@ class MainContent extends StatelessWidget {
                       ),
                     ),
                   ),
-                  new SizedBox(
-                    width: 5.0,
-                  ),
+
                   new Expanded(
                     child: Container(
+                      padding: EdgeInsets.only(left: 2.0,right: 2.0),
                       height: 150.0,
                       child: new Column(
                         children: <Widget>[
@@ -435,11 +436,10 @@ class MainContent extends StatelessWidget {
                       ),
                     ),
                   ),
-                  new SizedBox(
-                    width: 5.0,
-                  ),
+
                   new Expanded(
                     child: Container(
+                      padding: EdgeInsets.only(left: 2.0,right: 2.0),
                       height: 150.0,
                       child: new Column(
                         children: <Widget>[
